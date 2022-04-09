@@ -1,3 +1,8 @@
+<style>
+a.widget-link.header-nav-link.news.active {
+    display: none;
+}
+</style>
 <script type="text/discourse-plugin" version="0.2">
   api.onPageChange((url, title) => {
     const currentUser = api.getCurrentUser();
