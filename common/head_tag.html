@@ -1,12 +1,4 @@
-<style>
-.widget-link.header-nav-link.news {
-    display: none;
-}
-li.headerLink.vdo {
-    font-weight: bold;
-    text-transform: uppercase;
-}
-</style>
+
 <script type="text/discourse-plugin" version="0.2">
   api.onPageChange((url, title) => {
     const currentUser = api.getCurrentUser();
@@ -48,3 +40,68 @@ li.headerLink.vdo {
     _paq.push(['enableLinkTracking']);
   });
 </script>
+
+<style>
+.widget-link.header-nav-link.news {
+    display: none;
+}
+li.headerLink.vdo {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+    
+
+.topic-list-body a {
+  color: black;
+}
+
+.news #list-area.news .sidebar {
+    border: none !important;
+}
+
+.news .container.list-container.has-sidebar {
+      border: none !important;
+
+}
+
+.news .topic-list-body li::before { 
+  content : "•"; 
+  color : blue ;
+  display : inline-block ; 
+  width : 1em ;
+  margin-left: -1em ;
+ }
+ 
+  
+.news .topic-list-body tr {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1em;
+    background: white;
+}
+       
+  
+.news .topic-list-body li {
+  margin-top: 1em;
+  font-weight: bold;
+  list-style-type: disc;
+}
+  
+  
+.news .topic-list-body li a { 
+  text-decoration: none;
+}
+    
+  
+.news .topic-list-body .link-top-line a {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 60px;
+}
+    
+  
+.news .topic-list-body a:hover {
+  text-decoration: underline;
+}
+</style>
