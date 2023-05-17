@@ -139,7 +139,8 @@ li.headerLink.vdo {
 }
 </style>
 <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
-<script >
+<script>
+                    setTimeout(function(){
   PayPal.Donation.Button({
     env:'production',
     hosted_button_id:'5DYVRBL42JCAL',
@@ -149,6 +150,9 @@ li.headerLink.vdo {
      title:'PayPal - The safer, easier way to pay online!',
      }
   }).render('#donate-button');
+                      
+}, 3000);
+
 </script>
 
 <script>
