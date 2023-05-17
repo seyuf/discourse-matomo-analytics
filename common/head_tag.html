@@ -138,8 +138,18 @@ li.headerLink.vdo {
     box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
 }
 </style>
-                      <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
-
+<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+<script >
+  PayPal.Donation.Button({
+    env:'production',
+    hosted_button_id:'5DYVRBL42JCAL',
+    image: {
+     src:'https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donate_LG.gif',
+     alt:'Bouton Faites un don avec PayPal',
+     title:'PayPal - The safer, easier way to pay online!',
+     }
+  }).render('#donate-button');
+</script>
 
 <script>
     var js_script = document.createElement('script');
